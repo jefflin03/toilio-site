@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toilio — find a toilet, fast</title>
+<meta name="description" content="One tap finds the nearest verified toilet and routes you there. Community codes, tips, and freshness — free, in 8 languages.">
+<style>
+  :root {
+    --ink: #1B1F1E; --ink2: #575C59; --cream: #FFF8EC; --paper: #FFFDF7;
+    --butter: #F2C94C; --butter2: #FBE38C; --coral: #E4573D;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--butter);
+    color: var(--ink);
+    font-family: ui-rounded, "SF Pro Rounded", "Nunito", -apple-system, system-ui, sans-serif;
+    min-height: 100dvh;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 32px 20px; text-align: center; overflow-x: hidden;
+  }
+  .blob { position: fixed; border-radius: 50%; background: var(--butter2); opacity: .55; z-index: 0; }
+  .b1 { width: 340px; height: 340px; left: -120px; top: -90px; }
+  .b2 { width: 240px; height: 240px; right: -80px; bottom: 120px; }
+  main { position: relative; z-index: 1; max-width: 560px; }
+  .mascot { width: 190px; height: 190px; margin: 0 auto 6px; }
+  h1 {
+    font-size: clamp(52px, 12vw, 72px); font-weight: 800; letter-spacing: -3px;
+    transform: rotate(-3deg); margin-bottom: 14px;
+  }
+  .tag {
+    display: inline-block; background: var(--paper); border: 2px solid var(--ink);
+    border-radius: 999px; padding: 8px 18px; font-weight: 800; font-size: 16px;
+    box-shadow: 3px 3px 0 var(--ink); margin-bottom: 26px;
+  }
+  p.pitch { font-size: 17px; font-weight: 600; color: var(--ink); line-height: 1.55; margin-bottom: 30px; }
+  .cta {
+    display: inline-block; background: var(--coral); color: var(--cream);
+    border: 2.5px solid var(--ink); border-radius: 999px; padding: 16px 30px;
+    font-size: 19px; font-weight: 800; text-decoration: none;
+    box-shadow: 4px 4px 0 var(--ink); transform: rotate(-2deg);
+  }
+  .cta:active { transform: rotate(-2deg) translate(3px, 3px); box-shadow: 1px 1px 0 var(--ink); }
+  .soon { display: block; margin-top: 10px; font-size: 13px; font-weight: 800; color: var(--ink2); }
+  footer { margin-top: 44px; font-size: 13px; font-weight: 700; color: var(--ink); }
+  footer a { color: var(--ink); text-decoration: underline; text-decoration-thickness: 2px; }
+  footer span { opacity: .5; margin: 0 6px; }
+</style>
+</head>
+<body>
+<div class="blob b1"></div>
+<div class="blob b2"></div>
+<main>
+  <svg class="mascot" viewBox="0 0 1024 1024" aria-hidden="true">
+    <g transform="translate(500 560) scale(1.12) translate(-500 -560)">
+      <g fill="#FFF8EC" stroke="#1B1F1E" stroke-width="30" stroke-linejoin="round" stroke-linecap="round">
+        <rect x="352" y="238" width="190" height="220" rx="42"/>
+        <path d="M340 480 H700 A44 44 0 0 1 744 524 V560 A232 196 0 0 1 512 756 A232 196 0 0 1 280 560 V524 A44 44 0 0 1 324 480 Z"/>
+        <path d="M430 740 H594 L626 846 H398 Z"/>
+      </g>
+      <ellipse cx="530" cy="548" rx="150" ry="44" fill="#1B1F1E"/>
+      <ellipse cx="530" cy="548" rx="108" ry="26" fill="#FFF8EC"/>
+      <circle cx="412" cy="330" r="17" fill="#1B1F1E"/><circle cx="486" cy="330" r="17" fill="#1B1F1E"/>
+      <path d="M418 382 Q449 412 480 382" fill="none" stroke="#1B1F1E" stroke-width="18" stroke-linecap="round"/>
+      <circle cx="384" cy="366" r="14" fill="#E4573D" opacity=".75"/><circle cx="514" cy="366" r="14" fill="#E4573D" opacity=".75"/>
+      <rect x="540" y="292" width="54" height="24" rx="12" fill="#1B1F1E"/>
+    </g>
+  </svg>
+  <h1>toilio</h1>
+  <span class="tag">find a toilet, fast</span>
+  <p class="pitch">
+    One tap finds the nearest verified toilet and routes you there.
+    Door codes, cleanliness ratings, and tips from people who just went —
+    kept fresh by the community, free for everyone.
+  </p>
+  <a class="cta" href="#">🚽 Coming soon to the App&nbsp;Store</a>
+  <span class="soon">Launching first in Taipei · 8 languages</span>
+  <footer>
+    <a href="/privacy.html">Privacy</a><span>·</span>
+    <a href="/terms.html">Terms</a><span>·</span>
+    <a href="mailto:support@toilio.app">support@toilio.app</a>
+  </footer>
+</main>
+</body>
+</html>
